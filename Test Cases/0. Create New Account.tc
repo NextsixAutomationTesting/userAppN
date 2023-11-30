@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>0.Test</name>
+   <name>0. Create New Account</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>f434f4d4-a9e2-4489-b7ee-d87fc2efb661</testCaseGuid>

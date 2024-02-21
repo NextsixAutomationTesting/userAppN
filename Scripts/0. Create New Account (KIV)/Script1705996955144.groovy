@@ -17,9 +17,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+
 Mobile.startApplication('C:\\Users\\Nextsix\\git\\katalon-agentapp\\USER(ANDROID)v2.apk', true)
 
-Mobile.getText(findTestObject(''), 0)
+Mobile.delay(300)
 
 Mobile.tap(findTestObject('Object Repository/0. Create New Account/android.widget.TextView - Lets Get Started'), 0)
 

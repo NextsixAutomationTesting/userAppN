@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('C:\\Users\\Nextsix\\git\\katalon-agentapp\\easUpdateTesterUserV1.apk', true)
+Mobile.startApplication('C:\\Users\\Nextsix\\git\\katalon-agentapp\\userMapTesterV1.apk', true)
 
 Mobile.tap(findTestObject('Object Repository/7. Search by Area/android.widget.TextView - Lets Get Started'), 0)
 
@@ -25,10 +25,15 @@ Mobile.tap(findTestObject('Object Repository/7. Search by Area/android.widget.Te
 
 WebUI.delay(10)
 
-Mobile.tap(findTestObject('Object Repository/7. Search by Area/android.widget.RelativeLayout'), 0)
+Mobile.tap(findTestObject('Object Repository/7. Search by Area/android.widget.TextView - Get Agent (1)'), 0)
+
+
+//Mobile.tap(findTestObject('Object Repository/7. Search by Area/android.widget.RelativeLayout'), 0)
 
 WebUI.delay(10)
 
+
+//simpang ampat
 Mobile.setText(findTestObject('Object Repository/7. Search by Area/android.widget.EditText - Search agent here (1)'), 'simpang ampat', 0)
 
 Mobile.tap(findTestObject('Object Repository/7. Search by Area/android.widget.TextView - Simpang Ampat - AreaState'), 0)
@@ -39,5 +44,51 @@ Mobile.verifyElementExist(findTestObject('Object Repository/7. Search by Area/an
 
 Mobile.verifyElementExist(findTestObject('Object Repository/7. Search by Area/android.widget.TextView - Mat Ropi'), 0)
 
+Mobile.tap(findTestObject('Object Repository/7. Search by Area/android.widget.TextView -'), 0)
+
+
+//johor bahru
+Mobile.setText(findTestObject('Object Repository/7. Search by Area/android.widget.EditText - Search agent here (1)'), 'johor bahru', 0)
+
+Mobile.tap(findTestObject('Object Repository/7. Search by Area/android.widget.TextView - Johor Bahru - AreaState'), 0)
+
+Mobile.verifyElementExist(findTestObject('Object Repository/7. Search by Area/android.widget.TextView - toro'), 0)
+
+Mobile.verifyElementExist(findTestObject('Object Repository/7. Search by Area/android.widget.TextView - youvie'), 0)
+
+Mobile.verifyElementExist(findTestObject('Object Repository/7. Search by Area/android.widget.TextView - mam nick'), 0)
+
+Mobile.tap(findTestObject('Object Repository/7. Search by Area/android.widget.TextView -'), 0)
+
+
+//kuchai lama
+Mobile.setText(findTestObject('Object Repository/7. Search by Area/android.widget.EditText - Search agent here (1)'), 'kuchai lama', 0)
+
+Mobile.tap(findTestObject('Object Repository/7. Search by Area/android.widget.TextView - Kuchai Lama - AreaState'), 0)
+
+Mobile.verifyElementText(findTestObject('Object Repository/7. Search by Area/android.widget.TextView - lim salak 1'), 'lim salak 1')
+
+Mobile.verifyElementExist(findTestObject('Object Repository/7. Search by Area/android.widget.TextView - lisa lee'), 0)
+
+Mobile.verifyElementExist(findTestObject(''), 0)
+
+Mobile.verifyElementExist(findTestObject('Object Repository/7. Search by Area/android.widget.TextView - kicker'), 0)
+
+Mobile.tap(findTestObject('Object Repository/7. Search by Area/android.widget.TextView -'), 0)
+
+
+
+//kuching
+Mobile.setText(findTestObject('Object Repository/7. Search by Area/android.widget.EditText - Search agent here (3)'), 'kuching', 0)
+
+Mobile.tap(findTestObject('Object Repository/7. Search by Area/android.widget.TextView - Kuching - AreaState'), 0)
+
+Mobile.verifyElementExist(findTestObject('Object Repository/7. Search by Area/android.widget.TextView - mariael'), 0)
+
+Mobile.verifyElementExist(findTestObject('Object Repository/7. Search by Area/android.widget.TextView - haman'), 0)
+
+Mobile.verifyElementExist(findTestObject('Object Repository/7. Search by Area/android.widget.TextView - sony'), 0)
+
 Mobile.closeApplication()
+
 

@@ -75,6 +75,8 @@ def result1 = slurper1.parseText(getOTP.getResponseBodyContent())
 
 def otp = result1.documents[0].code
 
+println(otpTelephone)
+
 // Assuming otp is a 6-digit number
 def otpString = otp.toString()
 
@@ -104,18 +106,22 @@ println("Digit 5: $digit5")
 
 println("Digit 6: $digit6")
 
-Mobile.setText(findTestObject('Object Repository/5. Create New Account/android.widget.EditText'), "$digit1", 0)
+Mobile.setText(findTestObject('Object Repository/5. Create New Account/android.widget.EditText'), digit1.toString(), 0)
 
-Mobile.setText(findTestObject('Object Repository/5. Create New Account/android.widget.EditText (7)'), "$digit2", 0)
+Mobile.setText(findTestObject('Object Repository/5. Create New Account/android.widget.EditText (7)'), digit2.toString(), 
+    0)
 
-Mobile.setText(findTestObject('Object Repository/5. Create New Account/android.widget.EditText (2)'), "$digit3", 0)
+Mobile.setText(findTestObject('Object Repository/5. Create New Account/android.widget.EditText (2)'), digit3.toString(), 
+    0)
 
-Mobile.setText(findTestObject('Object Repository/5. Create New Account/android.widget.EditText (3)'), "$digit4", 0)
+Mobile.setText(findTestObject('Object Repository/5. Create New Account/android.widget.EditText (3)'), digit4.toString(), 
+    0)
 
-Mobile.setText(findTestObject('Object Repository/5. Create New Account/android.widget.EditText (4)'), "$digit5", 0)
+Mobile.setText(findTestObject('Object Repository/5. Create New Account/android.widget.EditText (4)'), digit5.toString(), 
+    0)
 
-Mobile.setText(findTestObject('Object Repository/5. Create New Account/android.widget.EditText (5)'), "$digit6", 0)
-
+Mobile.setText(findTestObject('Object Repository/5. Create New Account/android.widget.EditText (5)'), digit6.toString(), 
+    0)
 
 Mobile.tap(findTestObject('Object Repository/5. Create New Account/android.widget.TextView - Submit (1)'), 0)
 
@@ -140,23 +146,27 @@ Mobile.tap(findTestObject('Object Repository/5. Create New Account/android.widge
 
 Mobile.tap(findTestObject('Object Repository/5. Create New Account/android.widget.TextView - Agricultural Land'), 0)
 
-Mobile.tap(findTestObject(''), 0)
+Mobile.tap(findTestObject('Object Repository/5. Create New Account/android.widget.TextView - Next (1)'), 0)
 
-Mobile.tap(findTestObject('Object Repository/5. Create New Account/android.view.ViewGroup'), 0)
+Mobile.tap(findTestObject('5. Create New Account/android.view.ViewGroup'), 0)
 
 Mobile.tap(findTestObject('Object Repository/5. Create New Account/android.widget.TextView - Submit (2)'), 0)
 
 Mobile.tap(findTestObject('Object Repository/5. Create New Account/android.widget.ImageView'), 0)
 
-Mobile.tap(findTestObject(''), 0)
+Mobile.tap(findTestObject('Object Repository/5. Create New Account/android.widget.TextView - Profile (1)'), 0)
 
-Mobile.getText(findTestObject('Object Repository/5. Create New Account/android.widget.TextView - grimgmail.com'), 0)
+String expectedEmail = email
 
-Mobile.tap(findTestObject('Object Repository/5. Create New Account/android.widget.ImageView (1)'), 0)
+String actualEmail = Mobile.getText(findTestObject('5. Create New Account/android.widget.TextView - ulqvuqfhtiiubridge.com', 
+        [('expectedEmail') : expectedEmail]), 0)
 
-Mobile.tap(findTestObject(''), 0)
+Mobile.verifyMatch(actualEmail, expectedEmail, true)
 
-Mobile.getText(findTestObject(''), 0)
+Mobile.tap(findTestObject('Object Repository/5. Create New Account/android.widget.ImageView (2)'), 0)
 
 Mobile.closeApplication()
+
+
+
 

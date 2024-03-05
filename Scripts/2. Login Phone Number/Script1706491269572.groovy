@@ -72,8 +72,7 @@ println("Digit 6: $digit6")
 
 Mobile.tap(findTestObject('Object Repository/2. Login Phone Number/android.widget.EditText (16)'), 0)
 
-Mobile.setText(findTestObject('Object Repository/2. Login Phone Number/android.widget.EditText (10)'), digit1.toString(), 
-    0)
+Mobile.setText(findTestObject('Object Repository/2. Login Phone Number/android.widget.EditText (10)'), digit1.toString(), 0)
 
 Mobile.setText(findTestObject('Object Repository/2. Login Phone Number/android.widget.EditText (11)'), digit2.toString(), 
     0)

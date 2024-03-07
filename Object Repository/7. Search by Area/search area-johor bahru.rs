@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>search area</name>
+   <name>search area-johor bahru</name>
    <tag></tag>
-   <elementGuidId>703fd689-c5a5-4248-8c61-1a1204f3a5f1</elementGuidId>
+   <elementGuidId>478bdd4b-d7f4-4ca1-91b2-dff8e0fd7087</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <autoUpdateContent>false</autoUpdateContent>
@@ -11,7 +11,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;state\&quot;:\&quot;Penang\&quot;,\n    \&quot;area\&quot;:\&quot;Simpang Ampat\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n    \&quot;state\&quot;:\&quot;Johor\&quot;,\n    \&quot;area\&quot;:\&quot;Johor Bahru\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -22,7 +22,7 @@
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>962b8b72-eef6-4a53-903c-3205dbbfaef3</webElementGuid>
+      <webElementGuid>7f835213-cc49-4ca6-b075-4b860b9180d0</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.6.8</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>

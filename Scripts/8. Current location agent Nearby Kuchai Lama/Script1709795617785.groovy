@@ -17,3 +17,38 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+Mobile.startApplication('C:\\Users\\Nextsix\\git\\katalon-agentapp\\userMapTesterV1.apk', true)
+
+Mobile.startApplication('C:\\Users\\Nextsix\\git\\katalon-agentapp\\userMapTesterV1.apk', true)
+
+Mobile.tap(findTestObject('Object Repository/8. Current location agent Nearby Kuchai Lama/android.widget.TextView - Get Agent'), 
+    0)
+
+Mobile.getText(findTestObject('Object Repository/8. Current location agent Nearby Kuchai Lama/android.widget.TextView - Alastair'), 
+    0)
+
+Mobile.getText(findTestObject('Object Repository/8. Current location agent Nearby Kuchai Lama/android.widget.TextView - lim salak 1'), 
+    0)
+
+Mobile.getText(findTestObject('Object Repository/8. Current location agent Nearby Kuchai Lama/android.widget.TextView - Hazim Nickto'), 
+    0)
+
+Mobile.swipe(1, 1, 1, 1)
+
+Mobile.getText(findTestObject('Object Repository/8. Current location agent Nearby Kuchai Lama/android.widget.TextView - kicker'), 
+    0)
+
+Mobile.getText(findTestObject('Object Repository/8. Current location agent Nearby Kuchai Lama/android.widget.TextView - lim salak'), 
+    0)
+
+Mobile.getText(findTestObject('Object Repository/8. Current location agent Nearby Kuchai Lama/android.widget.TextView - lim kuchai 3'), 
+    0)
+
+Mobile.getText(findTestObject('Object Repository/8. Current location agent Nearby Kuchai Lama/android.widget.TextView - ralph'), 
+    0)
+
+Mobile.getText(findTestObject('Object Repository/8. Current location agent Nearby Kuchai Lama/android.widget.TextView - lisa lee'), 
+    0)
+
+Mobile.closeApplication()
+

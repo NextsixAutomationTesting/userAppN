@@ -19,11 +19,44 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startApplication('C:\\Users\\Nextsix\\git\\katalon-agentapp\\userMapTesterV1.apk', true)
 
-Mobile.startApplication('C:\\Users\\Nextsix\\git\\katalon-agentapp\\userMapTesterV1.apk', true)
+Mobile.tap(findTestObject('Object Repository/8. Current location agent Nearby Kuchai Lama/android.widget.TextView - Lets Get Started'),0)
 
-Mobile.tap(findTestObject('Object Repository/8. Current location agent Nearby Kuchai Lama/android.widget.TextView - Get Agent'), 
-    0)
+Mobile.tap(findTestObject('Object Repository/8. Current location agent Nearby Kuchai Lama/android.widget.TextView - Skip'),0)
 
+Mobile.tap(findTestObject('Object Repository/8. Current location agent Nearby Kuchai Lama/android.widget.TextView - Get Agent'), 0)
+
+
+
+agentCurrentLoc = WS.sendRequest(findTestObject('8. Current location agent Nearby Kuchai Lama/Agent in Current location'))
+
+def slurper = new groovy.json.JsonSlurper()
+
+def result = slurper.parseText(agentCurrentLoc.getResponseBodyContent())
+
+def areaSpecialistsNicknames = result.areaSpecialists.collect { it.nickname }
+def titleSpecialistsNicknames = result.titledSpecialists.collect { it.nickname }
+def normalAgentsNicknames = result.normalAgents.collect { it.nickname }
+
+// Iterate through the lists and print the nicknames with variables indicating the type
+areaSpecialistsNicknames.each { nickname ->
+    // Assuming your test object naming convention is like 'Object Repository/Nickname'
+    def testObjectLocator = "Object Repository/${nickname}"
+    Mobile.tap(findTestObject(('Object Repository/8. Current location agent Nearby Kuchai Lama/android.widget.TextView - Alastair'), 0))
+}
+
+titleSpecialistsNicknames.each { nickname ->
+    // Assuming your test object naming convention is like 'Object Repository/Nickname'
+    def testObjectLocator = "Object Repository/${nickname}"
+    Mobile.tap(findTestObject(('Object Repository/8. Current location agent Nearby Kuchai Lama/android.widget.TextView - Alastair'), 0))
+}
+
+normalAgentsNicknames.each { nickname ->
+    // Assuming your test object naming convention is like 'Object Repository/Nickname'
+    def testObjectLocator = "Object Repository/${nickname}"
+    Mobile.tap(findTestObject(('Object Repository/8. Current location agent Nearby Kuchai Lama/android.widget.TextView - Alastair'), 0))
+}
+
+/**
 Mobile.getText(findTestObject('Object Repository/8. Current location agent Nearby Kuchai Lama/android.widget.TextView - Alastair'), 
     0)
 
@@ -33,22 +66,7 @@ Mobile.getText(findTestObject('Object Repository/8. Current location agent Nearb
 Mobile.getText(findTestObject('Object Repository/8. Current location agent Nearby Kuchai Lama/android.widget.TextView - Hazim Nickto'), 
     0)
 
-Mobile.swipe(1, 1, 1, 1)
 
-Mobile.getText(findTestObject('Object Repository/8. Current location agent Nearby Kuchai Lama/android.widget.TextView - kicker'), 
-    0)
-
-Mobile.getText(findTestObject('Object Repository/8. Current location agent Nearby Kuchai Lama/android.widget.TextView - lim salak'), 
-    0)
-
-Mobile.getText(findTestObject('Object Repository/8. Current location agent Nearby Kuchai Lama/android.widget.TextView - lim kuchai 3'), 
-    0)
-
-Mobile.getText(findTestObject('Object Repository/8. Current location agent Nearby Kuchai Lama/android.widget.TextView - ralph'), 
-    0)
-
-Mobile.getText(findTestObject('Object Repository/8. Current location agent Nearby Kuchai Lama/android.widget.TextView - lisa lee'), 
-    0)
 
 Mobile.closeApplication()
-
+**/

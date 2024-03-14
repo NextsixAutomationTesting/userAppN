@@ -50,8 +50,7 @@ println(agent1)
 println(agent2)
 
 //simpang ampat
-Mobile.setText(findTestObject('Object Repository/7. Search by Area/android.widget.EditText - Search agent here (1)'), 'simpang ampat', 
-    0)
+Mobile.setText(findTestObject('Object Repository/7. Search by Area/android.widget.EditText - Search agent here (1)'), 'simpang ampat', 0)
 
 Mobile.tap(findTestObject('Object Repository/7. Search by Area/android.widget.TextView - Simpang Ampat - AreaState'), 0)
 

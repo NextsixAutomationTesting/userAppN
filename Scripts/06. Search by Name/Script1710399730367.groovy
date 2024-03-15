@@ -19,34 +19,34 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startApplication('C:\\Users\\Nextsix\\git\\katalon-agentapp\\easUpdateTesterUserV1.apk', true)
 
-Mobile.tap(findTestObject('Object Repository/6. Search by Name/android.widget.TextView - Lets Get Started'), 0)
+Mobile.tap(findTestObject('Object Repository/06. Search by Name/android.widget.TextView - Lets Get Started'), 0)
 
-Mobile.tap(findTestObject('Object Repository/6. Search by Name/android.widget.TextView - Skip'), 0)
+Mobile.tap(findTestObject('Object Repository/06. Search by Name/android.widget.TextView - Skip'), 0)
 
-Mobile.tap(findTestObject('Object Repository/6. Search by Name/android.widget.TextView - Get Agent'), 0)
+Mobile.tap(findTestObject('Object Repository/06. Search by Name/android.widget.TextView - Get Agent'), 0)
 
-Mobile.setText(findTestObject('Object Repository/6. Search by Name/android.widget.EditText - Search agent here'), 'bio', 
+Mobile.setText(findTestObject('Object Repository/06. Search by Name/android.widget.EditText - Search agent here'), 'bio', 
     0)
 
-Mobile.tap(findTestObject('Object Repository/6. Search by Name/android.widget.TextView - Bio'), 0)
+Mobile.tap(findTestObject('Object Repository/06. Search by Name/android.widget.TextView - Bio'), 0)
 
-Mobile.getText(findTestObject('Object Repository/6. Search by Name/android.widget.TextView - Bio (1)'), 0)
+Mobile.getText(findTestObject('Object Repository/06. Search by Name/android.widget.TextView - Bio (1)'), 0)
 
-Mobile.tap(findTestObject('Object Repository/6. Search by Name/android.widget.TextView -'), 0)
+Mobile.tap(findTestObject('Object Repository/06. Search by Name/android.widget.TextView -'), 0)
 
-Mobile.clearText(findTestObject('Object Repository/6. Search by Name/android.widget.EditText - bio'), 0)
+Mobile.clearText(findTestObject('Object Repository/06. Search by Name/android.widget.EditText - bio'), 0)
 
-Mobile.setText(findTestObject('Object Repository/6. Search by Name/android.widget.EditText - Search agent here (1)'), 'mike', 
+Mobile.setText(findTestObject('Object Repository/06. Search by Name/android.widget.EditText - Search agent here (1)'), 'mike', 
     0)
 
-Mobile.tap(findTestObject('Object Repository/6. Search by Name/android.widget.TextView - Mike'), 0)
+Mobile.tap(findTestObject('Object Repository/06. Search by Name/android.widget.TextView - Mike'), 0)
 
 
-Mobile.getText(findTestObject('Object Repository/6. Search by Name/android.widget.TextView - Mike (1)'), 0)
+Mobile.getText(findTestObject('Object Repository/06. Search by Name/android.widget.TextView - Mike (1)'), 0)
 
-Mobile.tap(findTestObject('Object Repository/6. Search by Name/android.widget.TextView - (1)'), 0)
+Mobile.tap(findTestObject('Object Repository/06. Search by Name/android.widget.TextView - (1)'), 0)
 
-Mobile.tap(findTestObject('Object Repository/6. Search by Name/android.view.ViewGroup'), 0)
+Mobile.tap(findTestObject('Object Repository/06. Search by Name/android.view.ViewGroup'), 0)
 
 Mobile.closeApplication()
 

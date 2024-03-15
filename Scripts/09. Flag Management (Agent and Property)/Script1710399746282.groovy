@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-flagNearby = WS.sendRequest(findTestObject('9. Flag Management (Agent and Property)/flagNearby'))
+flagNearby = WS.sendRequest(findTestObject('09. Flag Management (Agent and Property)/flagNearby'))
 
 def slurper = new groovy.json.JsonSlurper()
 
@@ -44,19 +44,19 @@ println(normalAgent1)
 
 Mobile.startApplication('C:\\Users\\Nextsix\\git\\katalon-agentapp\\userMapTesterV1.apk', true)
 
-Mobile.tap(findTestObject('Object Repository/9. Flag Management (Agent and Property)/android.widget.TextView - Lets Get Started'), 0)
+Mobile.tap(findTestObject('Object Repository/09. Flag Management (Agent and Property)/android.widget.TextView - Lets Get Started'), 0)
 
-Mobile.tap(findTestObject('Object Repository/9. Flag Management (Agent and Property)/android.widget.TextView - Skip'), 0)
+Mobile.tap(findTestObject('Object Repository/09. Flag Management (Agent and Property)/android.widget.TextView - Skip'), 0)
 
-Mobile.tap(findTestObject('Object Repository/9. Flag Management (Agent and Property)/android.widget.TextView - Get Agent'), 0)
+Mobile.tap(findTestObject('Object Repository/09. Flag Management (Agent and Property)/android.widget.TextView - Get Agent'), 0)
 
-Mobile.tap(findTestObject('Object Repository/9. Flag Management (Agent and Property)/android.widget.TextView - Kuchai Lama'), 0)
+Mobile.tap(findTestObject('Object Repository/09. Flag Management (Agent and Property)/android.widget.TextView - Kuchai Lama'), 0)
 
 
 
 String expectedProp0 = prop0
 
-String actualProp0 = Mobile.getText(findTestObject('Object Repository/9. Flag Management (Agent and Property)/android.widget.TextView - Dua Residency', [('expectedProp0') : expectedProp0]), 0)
+String actualProp0 = Mobile.getText(findTestObject('Object Repository/09. Flag Management (Agent and Property)/android.widget.TextView - Dua Residency', [('expectedProp0') : expectedProp0]), 0)
 
 Mobile.verifyMatch (actualProp0, expectedProp0, true )
 
@@ -64,37 +64,37 @@ Mobile.verifyMatch (actualProp0, expectedProp0, true )
 
 String expectedProp1 = prop1
 
-String actualProp1 = Mobile.getText(findTestObject('Object Repository/9. Flag Management (Agent and Property)/android.widget.TextView - Kiara Designer Suites - Serviced Condominium', [('expectedProp1') : expectedProp1]), 0)
+String actualProp1 = Mobile.getText(findTestObject('Object Repository/09. Flag Management (Agent and Property)/android.widget.TextView - Kiara Designer Suites - Serviced Condominium', [('expectedProp1') : expectedProp1]), 0)
 
 Mobile.verifyMatch(actualProp1, expectedProp1, true)
 
 
 
-Mobile.tap(findTestObject('Object Repository/9. Flag Management (Agent and Property)/android.widget.TextView - Agents'), 0)
+Mobile.tap(findTestObject('Object Repository/09. Flag Management (Agent and Property)/android.widget.TextView - Agents'), 0)
 
 
 String expectedAreaSpecialist = areaSpecialist
 
-String actualAreaSpecialist = Mobile.getText(findTestObject('Object Repository/9. Flag Management (Agent and Property)/android.widget.TextView - trrpublic',[('expectedAreaSpecialist') : expectedAreaSpecialist]), 0)
+String actualAreaSpecialist = Mobile.getText(findTestObject('Object Repository/09. Flag Management (Agent and Property)/android.widget.TextView - trrpublic',[('expectedAreaSpecialist') : expectedAreaSpecialist]), 0)
 
 Mobile.verifyMatch(actualAreaSpecialist, expectedAreaSpecialist, true )
 
 
 String expectedNormalAgent0 = normalAgent0
 
-String actualNormalAgent0 = Mobile.getText(findTestObject('Object Repository/9. Flag Management (Agent and Property)/android.widget.TextView - Cade',[('expectedNormalAgent0'):expectedNormalAgent0]), 0)
+String actualNormalAgent0 = Mobile.getText(findTestObject('Object Repository/09. Flag Management (Agent and Property)/android.widget.TextView - Cade',[('expectedNormalAgent0'):expectedNormalAgent0]), 0)
 
 Mobile.verifyMatch(actualNormalAgent0, expectedNormalAgent0, true )
 
 
 String expectedNormalAgent1 = normalAgent1
 
-String actualNormalAgent1 = Mobile.getText(findTestObject('Object Repository/9. Flag Management (Agent and Property)/android.widget.TextView - Jess Yee', [('expectedNormalAgent1'): expectedNormalAgent1]), 0)
+String actualNormalAgent1 = Mobile.getText(findTestObject('Object Repository/09. Flag Management (Agent and Property)/android.widget.TextView - Jess Yee', [('expectedNormalAgent1'): expectedNormalAgent1]), 0)
 
 Mobile.verifyMatch(actualNormalAgent1, expectedNormalAgent1, true)
 
 
-Mobile.tap(findTestObject('Object Repository/9. Flag Management (Agent and Property)/android.widget.TextView - Properties'), 0)
+Mobile.tap(findTestObject('Object Repository/09. Flag Management (Agent and Property)/android.widget.TextView - Properties'), 0)
 
 Mobile.pressBack()
 

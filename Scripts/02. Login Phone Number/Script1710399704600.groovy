@@ -19,21 +19,21 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startApplication('C:\\Users\\Nextsix\\git\\katalon-agentapp\\USER(ANDROID)v2.apk', true)
 
-Mobile.tap(findTestObject('Object Repository/2. Login Phone Number/android.widget.TextView - Lets Get Started'), 0)
+Mobile.tap(findTestObject('Object Repository/02. Login Phone Number/android.widget.TextView - Lets Get Started'), 0)
 
-Mobile.tap(findTestObject('Object Repository/2. Login Phone Number/android.widget.TextView - Skip'), 0)
+Mobile.tap(findTestObject('Object Repository/02. Login Phone Number/android.widget.TextView - Skip'), 0)
 
-Mobile.tap(findTestObject('Object Repository/2. Login Phone Number/android.widget.TextView - Profile (1)'), 0)
+Mobile.tap(findTestObject('Object Repository/02. Login Phone Number/android.widget.TextView - Profile (1)'), 0)
 
-Mobile.tap(findTestObject('Object Repository/2. Login Phone Number/android.widget.TextView - Sign In with Phone Number (1)'), 
+Mobile.tap(findTestObject('Object Repository/02. Login Phone Number/android.widget.TextView - Sign In with Phone Number (1)'), 
     0)
 
-Mobile.setText(findTestObject('Object Repository/2. Login Phone Number/android.widget.EditText - 60 Phone Number (1)'), 
+Mobile.setText(findTestObject('Object Repository/02. Login Phone Number/android.widget.EditText - 60 Phone Number (1)'), 
     '178454122', 0)
 
-Mobile.tap(findTestObject('Object Repository/2. Login Phone Number/android.widget.TextView - Submit (1)'), 30)
+Mobile.tap(findTestObject('Object Repository/02. Login Phone Number/android.widget.TextView - Submit (1)'), 30)
 
-getOTP = WS.sendRequest(findTestObject('2. Login Phone Number/get otp'))
+getOTP = WS.sendRequest(findTestObject('02. Login Phone Number/get otp'))
 
 def slurper = new groovy.json.JsonSlurper()
 
@@ -70,42 +70,42 @@ println("Digit 5: $digit5")
 
 println("Digit 6: $digit6")
 
-Mobile.tap(findTestObject('Object Repository/2. Login Phone Number/android.widget.EditText (16)'), 0)
+Mobile.tap(findTestObject('Object Repository/02. Login Phone Number/android.widget.EditText (16)'), 0)
 
-Mobile.setText(findTestObject('Object Repository/2. Login Phone Number/android.widget.EditText (10)'), digit1.toString(), 0)
+Mobile.setText(findTestObject('Object Repository/02. Login Phone Number/android.widget.EditText (10)'), digit1.toString(), 0)
 
-Mobile.setText(findTestObject('Object Repository/2. Login Phone Number/android.widget.EditText (11)'), digit2.toString(), 
+Mobile.setText(findTestObject('Object Repository/02. Login Phone Number/android.widget.EditText (11)'), digit2.toString(), 
     0)
 
-Mobile.setText(findTestObject('Object Repository/2. Login Phone Number/android.widget.EditText (12)'), digit3.toString(), 
+Mobile.setText(findTestObject('Object Repository/02. Login Phone Number/android.widget.EditText (12)'), digit3.toString(), 
     0)
 
-Mobile.setText(findTestObject('Object Repository/2. Login Phone Number/android.widget.EditText (13)'), digit4.toString(), 
+Mobile.setText(findTestObject('Object Repository/02. Login Phone Number/android.widget.EditText (13)'), digit4.toString(), 
     0)
 
-Mobile.setText(findTestObject('Object Repository/2. Login Phone Number/android.widget.EditText (14)'), digit5.toString(), 
+Mobile.setText(findTestObject('Object Repository/02. Login Phone Number/android.widget.EditText (14)'), digit5.toString(), 
     0)
 
-Mobile.setText(findTestObject('Object Repository/2. Login Phone Number/android.widget.EditText (15)'), digit6.toString(), 
+Mobile.setText(findTestObject('Object Repository/02. Login Phone Number/android.widget.EditText (15)'), digit6.toString(), 
     0)
 
-Mobile.tap(findTestObject('Object Repository/2. Login Phone Number/android.widget.TextView - Submit (3)'), 0)
+Mobile.tap(findTestObject('Object Repository/02. Login Phone Number/android.widget.TextView - Submit (3)'), 0)
 
 WebUI.delay(10)
 
 //Mobile.tap(findTestObject(''), 0)
-Mobile.tap(findTestObject('Object Repository/2. Login Phone Number/android.widget.TextView - Profile (1)'), 0)
+Mobile.tap(findTestObject('Object Repository/02. Login Phone Number/android.widget.TextView - Profile (1)'), 0)
 
-Mobile.verifyElementExist(findTestObject('Object Repository/2. Login Phone Number/android.widget.TextView - Hazim Harith'), 
+Mobile.verifyElementExist(findTestObject('Object Repository/02. Login Phone Number/android.widget.TextView - Hazim Harith'), 
     0)
 
-Mobile.tap(findTestObject('Object Repository/2. Login Phone Number/android.widget.ImageView'), 0)
+Mobile.tap(findTestObject('Object Repository/02. Login Phone Number/android.widget.ImageView'), 0)
 
 WebUI.delay(10)
 
-Mobile.tap(findTestObject('Object Repository/2. Login Phone Number/android.widget.TextView - Profile (1)'), 0)
+Mobile.tap(findTestObject('Object Repository/02. Login Phone Number/android.widget.TextView - Profile (1)'), 0)
 
-Mobile.verifyElementExist(findTestObject('2. Login Phone Number/android.widget.TextView - Sign In with Phone Number (2)'), 
+Mobile.verifyElementExist(findTestObject('02. Login Phone Number/android.widget.TextView - Sign In with Phone Number (2)'), 
     0)
 
 Mobile.closeApplication()

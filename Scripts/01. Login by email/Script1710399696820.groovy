@@ -19,35 +19,35 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startApplication('C:\\Users\\Nextsix\\git\\katalon-agentapp\\USER(ANDROID)v2.apk', true)
 
-Mobile.tap(findTestObject('Object Repository/1. Login by email/android.widget.TextView - Lets Get Started'), 0)
+Mobile.tap(findTestObject('Object Repository/01. Login by email/android.widget.TextView - Lets Get Started'), 0)
 
-Mobile.tap(findTestObject('Object Repository/1. Login by email/android.widget.TextView - Skip'), 0)
+Mobile.tap(findTestObject('Object Repository/01. Login by email/android.widget.TextView - Skip'), 0)
 
-Mobile.tap(findTestObject('Object Repository/1. Login by email/android.widget.TextView - Profile (1)'), 0)
+Mobile.tap(findTestObject('Object Repository/01. Login by email/android.widget.TextView - Profile (1)'), 0)
 
-Mobile.tap(findTestObject('Object Repository/1. Login by email/android.widget.TextView - Sign In'), 0)
+Mobile.tap(findTestObject('Object Repository/01. Login by email/android.widget.TextView - Sign In'), 0)
 
-Mobile.setText(findTestObject('Object Repository/1. Login by email/android.widget.EditText - Email'), 'myson@gmail.com', 
+Mobile.setText(findTestObject('Object Repository/01. Login by email/android.widget.EditText - Email'), 'myson@gmail.com', 
     0)
 
-Mobile.setText(findTestObject('Object Repository/1. Login by email/android.widget.EditText - Password'), '1', 0)
+Mobile.setText(findTestObject('Object Repository/01. Login by email/android.widget.EditText - Password'), '1', 0)
 
-Mobile.tap(findTestObject('Object Repository/1. Login by email/android.widget.TextView - Sign In (1)'), 0)
+Mobile.tap(findTestObject('Object Repository/01. Login by email/android.widget.TextView - Sign In (1)'), 0)
 
-Mobile.verifyElementExist(findTestObject('Object Repository/1. Login by email/android.widget.TextView - Myson'), 0)
+Mobile.verifyElementExist(findTestObject('Object Repository/01. Login by email/android.widget.TextView - Myson'), 0)
 
-Mobile.verifyElementExist(findTestObject('Object Repository/1. Login by email/android.widget.TextView - mysongmail.com'), 
+Mobile.verifyElementExist(findTestObject('Object Repository/01. Login by email/android.widget.TextView - mysongmail.com'), 
     0)
 
-Mobile.tap(findTestObject('Object Repository/1. Login by email/android.widget.ImageView'), 0)
+Mobile.tap(findTestObject('Object Repository/01. Login by email/android.widget.ImageView'), 0)
 
-Mobile.tap(findTestObject('Object Repository/1. Login by email/android.widget.TextView - Profile'), 0)
+Mobile.tap(findTestObject('Object Repository/01. Login by email/android.widget.TextView - Profile'), 0)
 
-Mobile.verifyElementExist(findTestObject('Object Repository/1. Login by email/android.widget.ImageView (2)'), 0)
+Mobile.verifyElementExist(findTestObject('Object Repository/01. Login by email/android.widget.ImageView (2)'), 0)
 
-Mobile.tap(findTestObject('Object Repository/1. Login by email/android.widget.TextView - Profile (2)'), 0)
+Mobile.tap(findTestObject('Object Repository/01. Login by email/android.widget.TextView - Profile (2)'), 0)
 
-Mobile.verifyElementExist(findTestObject('Object Repository/1. Login by email/android.widget.TextView - Sign In (2)'), 0)
+Mobile.verifyElementExist(findTestObject('Object Repository/01. Login by email/android.widget.TextView - Sign In (2)'), 0)
 
 Mobile.closeApplication()
 

@@ -19,21 +19,21 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startApplication('C:\\Users\\Nextsix\\git\\katalon-agentapp\\easUpdateTesterUserV1.apk', true)
 
-Mobile.tap(findTestObject('Object Repository/3. Login with Google/android.widget.TextView - Lets Get Started'), 0)
+Mobile.tap(findTestObject('Object Repository/03. Login with Google/android.widget.TextView - Lets Get Started'), 0)
 
-Mobile.tap(findTestObject('Object Repository/3. Login with Google/android.widget.TextView - Skip'), 0)
+Mobile.tap(findTestObject('Object Repository/03. Login with Google/android.widget.TextView - Skip'), 0)
 
-Mobile.tap(findTestObject('Object Repository/3. Login with Google/android.widget.TextView - Profile'), 0)
+Mobile.tap(findTestObject('Object Repository/03. Login with Google/android.widget.TextView - Profile'), 0)
 
-Mobile.tap(findTestObject('Object Repository/3. Login with Google/android.widget.TextView - Sign In with Google123 (1)'), 0)
+Mobile.tap(findTestObject('Object Repository/03. Login with Google/android.widget.TextView - Sign In with Google123 (1)'), 0)
 
-Mobile.tap(findTestObject('Object Repository/3. Login with Google/android.widget.TextView - Calvin Kurt (1)'), 0)
+Mobile.tap(findTestObject('Object Repository/03. Login with Google/android.widget.TextView - Calvin Kurt (1)'), 0)
 
-//Mobile.getText(findTestObject('Object Repository/3. Login with Google/android.widget.TextView - kurtcalvin9@gmail.com'), 0)
+//Mobile.getText(findTestObject('Object Repository/03. Login with Google/android.widget.TextView - kurtcalvin9@gmail.com'), 0)
 //Mobile.tap(findTestObject('Object Repository/3. Login with Google/android.widget.ImageView'), 0)
 //Mobile.tap(findTestObject(''), 0)
 
-Mobile.tap(findTestObject('Object Repository/3. Login with Google/android.widget.ImageView (1)'), 0)
+Mobile.tap(findTestObject('Object Repository/03. Login with Google/android.widget.ImageView (1)'), 0)
 
 
 Mobile.closeApplication()

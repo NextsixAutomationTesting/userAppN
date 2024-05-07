@@ -1,0 +1,43 @@
+{
+  "keywordFileContentHash": "B83E96D5E2D9C52BD38A6B2B4470E7FC",
+  "keywordClasses": [
+    {
+      "name": "customKeyWords.CustomKeywords",
+      "keywordMethods": [
+        {
+          "name": "swipeUpToObject",
+          "parameters": [
+            {
+              "name": "toObject",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "com.kms.katalon.core.testobject.TestObject",
+                "unresolvedClassName": "TestObject",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "duration",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "int",
+                "unresolvedClassName": "int",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

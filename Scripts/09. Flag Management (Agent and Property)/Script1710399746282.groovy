@@ -42,7 +42,7 @@ println(normalAgent0)
 
 println(normalAgent1)
 
-Mobile.startApplication('C:\\Users\\Nextsix\\git\\katalon-agentapp\\userTester240503FixCrash(0.13.7).apk', true)
+Mobile.startApplication('C:\\Users\\Nextsix\\git\\katalon-agentapp\\userTester240508FixCrash(0.13.7).apk', true)
 
 Mobile.tap(findTestObject('Object Repository/09. Flag Management (Agent and Property)/android.widget.TextView - Lets Get Started'), 0)
 

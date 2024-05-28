@@ -16,42 +16,24 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import io.appium.java_client.AppiumDriver as AppiumDriver
+import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
 
-import io.appium.java_client.AppiumDriver
-import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
+Mobile.startApplication('C:\\Users\\Nextsix\\git\\katalon-agentapp\\userTester240508FixCrash(0.13.7).apk', true)
 
-Mobile.startApplication('C:\\Users\\Nextsix\\git\\katalon-agentapp\\userTester240503FixCrash(0.13.7).apk', true)
+Mobile.tap(findTestObject('Object Repository/0.test/android.widget.TextView - Lets Get Started (1)'), 0)
 
-Mobile.tap(findTestObject('Object Repository/0.test/android.widget.TextView - Lets Get Started'), 0)
+Mobile.tap(findTestObject('Object Repository/0.test/android.widget.TextView - Skip (1)'), 0)
 
-Mobile.tap(findTestObject('Object Repository/0.test/android.widget.TextView - Skip'), 0)
+Mobile.tap(findTestObject('Object Repository/0.test/android.widget.TextView - Get Agent'), 0)
 
-//Mobile.scrollToText('Latest For Rent')
-WebUI.delay(5)
+String a = Mobile.getText(findTestObject('Object Repository/0.test/android.widget.TextView - MapListing (1)'), 0)
 
-
-
-// Get the AppiumDriver instance
-AppiumDriver driver = MobileDriverFactory.getDriver()
+println(a)
 
 
-// Get the size of the device screen
-def size = driver.manage().window().getSize()
-
-// Define the percentage of the screen for starting and ending points
-def startYPercentage = 0.9 // 70% from the top
-def endYPercentage = 0.1   // 30% from the top
-
-// Calculate the starting and ending coordinates based on screen size
-def startX = size.width / 2
-def startY = (int) (size.height * startYPercentage)
-def endX = size.width / 2
-def endY = (int) (size.height * endYPercentage)
-
-// Perform the swipe action
-Mobile.swipe(startX as int, startY as int, endX as int, endY as int)
 
 
-Mobile.getText(findTestObject('Object Repository/0.test/android.widget.TextView - Latest For Rent'), 0)
+
 
 

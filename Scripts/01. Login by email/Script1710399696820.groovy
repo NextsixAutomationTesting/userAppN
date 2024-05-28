@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('C:\\Users\\Nextsix\\git\\katalon-agentapp\\userTester240503FixCrash(0.13.7).apk', true)
+Mobile.startApplication('C:\\Users\\Nextsix\\git\\katalon-agentapp\\userTester240508FixCrash(0.13.7).apk', true)
 
 Mobile.tap(findTestObject('Object Repository/01. Login by email/android.widget.TextView - Lets Get Started'), 0)
 
@@ -34,6 +34,8 @@ Mobile.setText(findTestObject('Object Repository/01. Login by email/android.widg
 
 Mobile.tap(findTestObject('Object Repository/01. Login by email/android.widget.TextView - Sign In (1)'), 0)
 
+WebUI.delay(4)
+
 Mobile.verifyElementExist(findTestObject('Object Repository/01. Login by email/android.widget.TextView - Myson'), 0)
 
 Mobile.verifyElementExist(findTestObject('Object Repository/01. Login by email/android.widget.TextView - mysongmail.com'), 
@@ -47,8 +49,8 @@ Mobile.verifyElementExist(findTestObject('Object Repository/01. Login by email/a
 
 Mobile.tap(findTestObject('Object Repository/01. Login by email/android.widget.TextView - Profile (2)'), 0)
 
-Mobile.verifyElementExist(findTestObject('Object Repository/01. Login by email/android.widget.TextView - Sign In (2)'), 0)
+Mobile.verifyElementExist(findTestObject('Object Repository/01. Login by email/android.widget.TextView - Sign In (2)'), 
+    0)
 
 Mobile.closeApplication()
-
 

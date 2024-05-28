@@ -24,7 +24,7 @@ import io.appium.java_client.AppiumDriver
 
 
 
-Mobile.startApplication('C:\\Users\\Nextsix\\git\\katalon-agentapp\\userTester240503FixCrash(0.13.7).apk', true)
+Mobile.startApplication('C:\\Users\\Nextsix\\git\\katalon-agentapp\\userTester240508FixCrash(0.13.7).apk', true)
 
 Mobile.tap(findTestObject('Object Repository/11. Send Enquiry Merchant/android.widget.TextView - Lets Get Started'), 0)
 
@@ -47,7 +47,9 @@ Mobile.tap(findTestObject('Object Repository/11. Send Enquiry Merchant/android.w
 
 WebUI.delay(10)
 
-Mobile.tap(findTestObject('Object Repository/11. Send Enquiry Merchant/android.widget.TextView - Company name'), 0)
+Mobile.scrollToText('Company Name')
+
+Mobile.tap(findTestObject('Object Repository/11. Send Enquiry Merchant/android.widget.TextView - Company Name'), 0)
 
 Mobile.tap(findTestObject('Object Repository/11. Send Enquiry Merchant/android.widget.TextView - Enquire Now'), 0)
 

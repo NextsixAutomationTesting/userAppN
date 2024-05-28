@@ -18,7 +18,7 @@ import org.openqa.selenium.WebElement as WebElement
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('C:\\Users\\Nextsix\\git\\katalon-agentapp\\userTester240503FixCrash(0.13.7).apk', true)
+Mobile.startApplication('C:\\Users\\Nextsix\\git\\katalon-agentapp\\userTester240508FixCrash(0.13.7).apk', true)
 
 Mobile.tap(findTestObject('Object Repository/10. Current Location Property (Buy) - Kuchai Lama/android.widget.TextView - Lets Get Started'), 
     0)

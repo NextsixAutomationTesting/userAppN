@@ -28,13 +28,14 @@ import io.appium.java_client.MobileElement as MobileElement
 import io.appium.java_client.touch.WaitOptions as WaitOptions
 import java.time.Duration as Duration
 
+
 Mobile.startApplication('C:\\Users\\Nextsix\\git\\katalon-agentapp\\userTester240508FixCrash(0.13.7).apk', true)
 
 Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Lets Get Started'), 0)
 
 Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Skip'), 0)
 
-
+/**
 'Click Search icon in Quick Search bar'
 Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.TextView - (1)'), 0)
 
@@ -76,12 +77,10 @@ Mobile.verifyElementExist(findTestObject('Object Repository/000.Back Button/andr
 
 Mobile.pressBack()
 
-
 'Click Agent'
 Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Get Agent'), 0)
 
 WebUI.delay(4)
-
 
 Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.SeekBar (1)'), 0)
 
@@ -110,8 +109,6 @@ String actualProperty0 = Mobile.getText(findTestObject(objectLocator), 0)
 
 Mobile.verifyMatch(actualProperty0, expectedProperty0, true)
 
-//String actualProperty0 = Mobile.getText(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Dynasty Garden Condominium', [('property0'): property0]), 0)
-//String actualProperty0 = Mobile.getText(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Dynasty Garden Condominium',[('expectedProperty0') : expectedProperty0]), 0)
 Mobile.pressBack()
 
 //Get Agent Nearby
@@ -164,8 +161,8 @@ WebUI.delay(5)
 
 Mobile.pressBack()
 
-Mobile.verifyElementExist(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Search this area (1)'), 0)
-
+Mobile.verifyElementExist(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Search this area (1)'), 
+    0)
 
 Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.TextView - MapListing (2)'), 0)
 
@@ -189,13 +186,11 @@ Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.Text
 WebUI.delay(5)
 
 'Click First Nearby property'
-Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Kuchai Avenue'), 0)
+Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Kuchai Avenue (1)'), 0)
 
 'Click property\'s agent'
-//Mobile.tap(findTestObject('Object Repository/00. Create New Account/android.widget.TextView - CADE'), 0)
 Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.TextView - CADE'), 0)
 
-//Mobile.verifyElementText(findTestObject('Object Repository/00. Create New Account/android.widget.TextView - CADE (1)'), 'CADE')
 Mobile.verifyElementText(findTestObject('Object Repository/000.Back Button/android.widget.TextView - CADE'), 'CADE')
 
 Mobile.pressBack()
@@ -228,9 +223,244 @@ Mobile.pressBack()
 Mobile.verifyElementExist(findTestObject('Object Repository/00. Create New Account/android.widget.TextView - Get Agent Nearby'), 
     0)
 
+Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Profile (1)'), 0)
 
+Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Sign In (2)'), 0)
 
+Mobile.setText(findTestObject('Object Repository/000.Back Button/android.widget.EditText - Email (1)'), 'peter@gmail.com', 
+    0)
 
+Mobile.setText(findTestObject('Object Repository/000.Back Button/android.widget.EditText - Password (1)'), '2', 0)
 
+Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Sign In (3)'), 0)
 
+Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Home (1)'), 0)
+
+WebUI.delay(5)
+
+Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.TextView - My Likes (1)'), 0)
+
+Mobile.verifyElementText(findTestObject('Object Repository/000.Back Button/android.widget.TextView - My Likes'), 'My Likes')
+
+//Get My Likes Property id
+myLikes = WS.sendRequest(findTestObject('000.Back Button/My Likes'))
+
+def slurper3 = new groovy.json.JsonSlurper()
+
+def result3 = slurper3.parseText(myLikes.getResponseBodyContent())
+
+def myLikesPropertyId = result3.documents[0].property
+
+println(myLikesPropertyId)
+
+//Get My Like Property Name
+myLikesPropertyName = WS.sendRequest(findTestObject('000.Back Button/My Likes Property', [('propertyid') : myLikesPropertyId]))
+
+def slurper4 = new groovy.json.JsonSlurper()
+
+def result4 = slurper4.parseText(myLikesPropertyName.getResponseBodyContent())
+
+def myLikesPropertyName = result4.documents[0].name
+
+println(myLikesPropertyName)
+
+WebUI.delay(3)
+
+Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.TextView - ' + myLikesPropertyName), 0)
+
+Mobile.verifyElementText(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Recommendation'), 'Recommendation')
+
+Mobile.pressBack()
+
+Mobile.verifyElementText(findTestObject('Object Repository/000.Back Button/android.widget.TextView - My Likes'), 'My Likes')
+
+Mobile.pressBack()
+
+Mobile.verifyElementText(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Get Agent Nearby (1)'), 
+    'Get Agent Nearby')
+
+Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Home Pro (1)'), 0)
+
+WebUI.delay(3)
+
+Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Service Record (1)'), 0)
+
+Mobile.pressBack()
+
+Mobile.scrollToText('Cado')
+
+Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Cado (1)'), 0)
+
+Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Enquire Now (1)'), 0)
+
+Mobile.verifyElementText(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Enquiry Form (1)'), 
+    'Enquiry Form')
+
+Mobile.pressBack()
+
+Mobile.verifyElementText(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Coverage State'), 'Coverage State')
+
+Mobile.pressBack()
+
+Mobile.verifyElementText(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Recommendation (1)'), 
+    'Recommendation')
+
+Mobile.pressBack()
+
+Mobile.verifyElementText(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Get Agent Nearby (2)'), 
+    'Get Agent Nearby')
+
+Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Daily'), 0)
+
+Mobile.verifyElementText(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Tell Us your Identity'), 
+    'Tell Us your Identity')
+
+//click owner(Landlord)/Seller
+Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.ImageView (5)'), 0)
+
+//Click Next button
+Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Next'), 0)
+
+Mobile.verifyElementText(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Seller'), 'Seller')
+
+//Click Seller
+Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.ImageView (6)'), 0)
+
+//Click Next
+Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Next (2)'), 0)
+
+Mobile.verifyElementText(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Where is your property'), 
+    'Where is your property?')
+
+Mobile.pressBack()
+
+//Click Landlord
+Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.ImageView (7)'), 0)
+
+//Click Next
+Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Next (2)'), 0)
+
+Mobile.verifyElementText(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Where is your property'), 
+    'Where is your property?')
+
+WebUI.delay(3)
+
+Mobile.pressBack()
+
+Mobile.verifyElementText(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Landlord'), 'Landlord')
+
+Mobile.verifyElementText(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Tell Us your Identity'), 
+    'Tell Us your Identity')
+
+Mobile.pressBack()
+
+WebUI.delay(3)
+
+Mobile.pressBack()
+
+Mobile.verifyElementText(findTestObject('Object Repository/000.Back Button/android.widget.TextView - TenantBuyer'), 'Tenant/Buyer')
+
+//Click Tenant/Buyer
+Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.ImageView (8)'), 0)
+
+//Click Next button
+Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Next'), 0)
+
+Mobile.verifyElementText(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Buyer'), 'Buyer')
+
+//Click Buyer
+Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.ImageView (9)'), 0)
+
+//Click Next
+Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Next (2)'), 0)
+
+Mobile.verifyElementText(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Preferrable Location'), 
+    'Preferrable Location')
+
+Mobile.pressBack()
+
+Mobile.verifyElementText(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Tenant'), 'Tenant')
+
+Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.ImageView (10)'), 0)
+
+//Click Next
+Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Next (2)'), 0)
+
+Mobile.verifyElementText(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Preferrable Location'), 
+    'Preferrable Location')
+
+Mobile.pressBack()
+
+Mobile.verifyElementText(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Tell Us your Identity'), 
+    'Tell Us your Identity')
+
+Mobile.pressBack()
+
+WebUI.delay(3)
+
+Mobile.pressBack()
+
+Mobile.verifyElementText(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Owner(Landlord)Seller (1)'), 
+    'Owner(Landlord)/Seller')
+
+WebUI.delay(3)
+
+Mobile.pressBack()
+
+Mobile.verifyElementText(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Get Agent Nearby (3)'), 
+    'Get Agent Nearby')
+    
+
+//Feature Property
+featureProperty = WS.sendRequest(findTestObject('000.Back Button/Get Feature Listing'))
+
+def slurper5 = new groovy.json.JsonSlurper()
+
+def result5 = slurper5.parseText(featureProperty.getResponseBodyContent())
+
+def featurePropertyName = result5[0].property.name
+
+println(featurePropertyName)
+
+Mobile.scrollToText(featurePropertyName)
+
+Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.TextView - ' + featurePropertyName), 0)
+
+Mobile.verifyElementText(findTestObject('Object Repository/000.Back Button/android.widget.TextView - ' + featurePropertyName), 
+    featurePropertyName)
+
+Mobile.pressBack()
+
+Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.TextView - See All'), 0)
+
+Mobile.verifyElementText(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Featured Property Listing'), 
+    'Featured Property Listing')
+
+Mobile.tap(findTestObject('Object Repository/000.Back Button/android.widget.TextView - ' + featurePropertyName), 0)
+
+Mobile.verifyElementText(findTestObject('Object Repository/000.Back Button/android.widget.TextView - ' + featurePropertyName), 
+    featurePropertyName)
+
+Mobile.pressBack()
+
+Mobile.verifyElementText(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Featured Property Listing'), 
+    'Featured Property Listing')
+
+Mobile.pressBack()
+
+Mobile.verifyElementText(findTestObject('Object Repository/000.Back Button/android.widget.TextView - Featured'), 'Featured')
+
+**/
+
+latestForSale = WS.sendRequest(findTestObject('000.Back Button/Get Latest for Sale'))
+
+def slurper6 = new groovy.json.JsonSlurper()
+
+def result6 = slurper6.parseText(latestForSale.getResponseBodyContent())
+
+def latestSalePropertyName = result6[0].name
+
+println(latestSalePropertyName)
+
+Mobile.scrollToText(latestSalePropertyName)
 

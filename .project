@@ -15,6 +15,13 @@
 		<nature>org.eclipse.jdt.groovy.core.groovyNature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>kat-276754873340017464.groovy</name>
+			<type>1</type>
+			<location>C:/Users/Nextsix/AppData/Local/Temp/Katalon/Web Services/kat-276754873340017464.groovy</location>
+		</link>
+	</linkedResources>
 	<filteredResources>
 		<filter>
 			<id>1701327409020</id>
@@ -801,6 +808,96 @@
 		</filter>
 		<filter>
 			<id>1716858109795</id>
+			<name></name>
+			<type>6</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>(.*\.svn-base$)|(.*\.png$)|(.*\.log$)|(.*\.xlsx$)|(.*\.xls$)|(.*\.csv$)|(.*\.txt$)</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1716943826533</id>
+			<name></name>
+			<type>10</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>.*\.svn$</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1716943826558</id>
+			<name></name>
+			<type>6</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>(.*\.svn-base$)|(.*\.png$)|(.*\.log$)|(.*\.xlsx$)|(.*\.xls$)|(.*\.csv$)|(.*\.txt$)</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1716963814275</id>
+			<name></name>
+			<type>10</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>.*\.svn$</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1716963814386</id>
+			<name></name>
+			<type>6</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>(.*\.svn-base$)|(.*\.png$)|(.*\.log$)|(.*\.xlsx$)|(.*\.xls$)|(.*\.csv$)|(.*\.txt$)</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1717033623181</id>
+			<name></name>
+			<type>10</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>.*\.svn$</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1717033623214</id>
+			<name></name>
+			<type>6</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>(.*\.svn-base$)|(.*\.png$)|(.*\.log$)|(.*\.xlsx$)|(.*\.xls$)|(.*\.csv$)|(.*\.txt$)</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1717116066546</id>
+			<name></name>
+			<type>10</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>.*\.svn$</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1717116066567</id>
+			<name></name>
+			<type>6</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>(.*\.svn-base$)|(.*\.png$)|(.*\.log$)|(.*\.xlsx$)|(.*\.xls$)|(.*\.csv$)|(.*\.txt$)</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1717127224151</id>
+			<name></name>
+			<type>10</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>.*\.svn$</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1717127224173</id>
 			<name></name>
 			<type>6</type>
 			<matcher>

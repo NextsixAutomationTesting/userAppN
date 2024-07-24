@@ -11,7 +11,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n      \&quot;dataSource\&quot;: \&quot;ClusterSIT\&quot;,\n      \&quot;database\&quot;: \&quot;trrappdb\&quot;,\n      \&quot;collection\&quot;: \&quot;favourites\&quot;,\n      \&quot;pipeline\&quot;:[\n        {\n            \&quot;$match\&quot;:{\n                \&quot;user\&quot;:{\n                    \&quot;$oid\&quot;:\&quot;5fab56c27b929a002f440d32\&quot;\n                }\n            }\n        },\n        {\n            \&quot;$sort\&quot;:{\n                \&quot;created\&quot;: -1\n            }\n        }\n      ]\n      \n}&quot;,
+  &quot;text&quot;: &quot;{\n      \&quot;dataSource\&quot;: \&quot;ClusterSIT\&quot;,\n      \&quot;database\&quot;: \&quot;trrappdb\&quot;,\n      \&quot;collection\&quot;: \&quot;favourites\&quot;,\n      \&quot;pipeline\&quot;:[\n        {\n            \&quot;$match\&quot;:{\n                \&quot;user\&quot;:{\n                    \&quot;$oid\&quot;:\&quot;651e5f015ace260056095b41\&quot;\n                }\n            }\n        },\n        {\n            \&quot;$sort\&quot;:{\n                \&quot;created\&quot;: -1\n            }\n        }\n      ]\n      \n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>

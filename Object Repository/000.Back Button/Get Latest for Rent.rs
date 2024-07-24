@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Agent Listing</name>
+   <name>Get Latest for Rent</name>
    <tag></tag>
-   <elementGuidId>cf4367af-bcf3-4fda-bc78-2eb8fb42be26</elementGuidId>
+   <elementGuidId>08c209c8-5b1d-47bd-ae3e-50ff6bd01855</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <autoUpdateContent>false</autoUpdateContent>
@@ -11,7 +11,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n      \&quot;dataSource\&quot;: \&quot;ClusterSIT\&quot;,\n      \&quot;database\&quot;: \&quot;trrappdb\&quot;,\n      \&quot;collection\&quot;: \&quot;realestates\&quot;,\n      \&quot;pipeline\&quot;:[\n        {\n\n        \&quot;$match\&quot;: {\n        \&quot;agent\&quot;: { \&quot;$oid\&quot;: \&quot;60c6fa0a151ab8002e4dea82\&quot; },\n        \&quot;active\&quot;: true,\n        \&quot;for\&quot;:\&quot;Buy\&quot;\n        }\n        \n        },\n\n        {\n            \&quot;$sort\&quot;:{\&quot;updated\&quot;: -1}\n        }\n\n\n      ]\n       \n  }&quot;,
+  &quot;text&quot;: &quot;{\n    \&quot;for\&quot;: \&quot;Rent\&quot;,\n    \&quot;location\&quot;:{\n        \&quot;latitude\&quot;: 3.085252,\n        \&quot;longitude\&quot;: 101.692468\n        }\n        }&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -22,21 +22,13 @@
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>298ce7df-d7f5-471b-b83b-cc539611a3e2</webElementGuid>
-   </httpHeaderProperties>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>api-key</name>
-      <type>Main</type>
-      <value>AKAFnW5WgyyOq3F3S2lVPcRhZr12qxZTTPjz0Llu1myg9jUSNjaVaGih51BZ8n60</value>
-      <webElementGuid>fd6e4134-c1a9-47a8-81c7-bcddd961d221</webElementGuid>
+      <webElementGuid>1cd07110-d0be-47a5-9352-f64a52d03542</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.6.8</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://data.mongodb-api.com/app/data-nnnyp/endpoint/data/beta/action/aggregate</restUrl>
+   <restUrl>https://sit-apps.nextsix.com/properties/latest</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

@@ -4,8 +4,12 @@
    <name>userAppN</name>
    <tag></tag>
    <UUID>2c4de99c-2d80-4c87-add1-b53a8f36fe5b</UUID>
+   <freeLicense>true</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
+   <modifiedEdition>FREE</modifiedEdition>
+   <modifiedVersion>9.7.2</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>C:\Users\Nextsix\git\katalon-agentapp\userAppN\userAppN.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

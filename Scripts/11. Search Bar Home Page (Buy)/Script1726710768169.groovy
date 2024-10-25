@@ -14,24 +14,20 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import org.openqa.selenium.WebElement as WebElement
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('C:\\Users\\Nextsix\\git\\katalon-agentapp\\userTester240508FixCrash(0.13.7).apk', true)
+Mobile.startApplication('C:\\Users\\Nextsix\\git\\katalon-agentapp\\UserSDK51Tester(0.13.8)V2.apk', true)
 
-Mobile.tap(findTestObject('Object Repository/10. Current Location Property (Buy) - Kuchai Lama/android.widget.TextView - Lets Get Started'), 
+Mobile.tap(findTestObject('Object Repository/11. Search Bar Home Page (Buy)/android.widget.TextView - Lets Get Started'), 
     0)
 
-Mobile.tap(findTestObject('Object Repository/10. Current Location Property (Buy) - Kuchai Lama/android.widget.TextView - Skip'), 
-    0)
+Mobile.tap(findTestObject('Object Repository/11. Search Bar Home Page (Buy)/android.widget.TextView - Skip'), 0)
 
-Mobile.tap(findTestObject('Object Repository/10. Current Location Property (Buy) - Kuchai Lama/android.widget.TextView - Property'), 
-    0)
+Mobile.tap(findTestObject('Object Repository/11. Search Bar Home Page (Buy)/android.view.ViewGroup'), 0)
 
-Mobile.delay(5)
+Mobile.setText(findTestObject('Object Repository/11. Search Bar Home Page (Buy)/android.widget.EditText - Search locationproperty here'), 
+    'subang', 0)
 
-TestObject element = findTestObject('Object Repository/10. Current Location Property (Buy) - Kuchai Lama/android.view.ViewGroup')
 
-//Mobile.swipe(element, 0, -100, 0)
 

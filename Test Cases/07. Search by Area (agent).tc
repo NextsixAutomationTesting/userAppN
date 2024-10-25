@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>11. Send Enquiry Merchant</name>
+   <name>07. Search by Area (agent)</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>ffa93c14-f982-4136-861a-324b29792199</testCaseGuid>
+   <testCaseGuid>1996c539-a703-45a0-8b7e-1b750af6a947</testCaseGuid>
 </TestCaseEntity>

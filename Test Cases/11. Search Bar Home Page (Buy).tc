@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>07. Search by Area</name>
+   <name>11. Search Bar Home Page (Buy)</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>1996c539-a703-45a0-8b7e-1b750af6a947</testCaseGuid>
+   <testCaseGuid>f5f76e3a-d544-44c7-82dc-70125bfc4fe9</testCaseGuid>
 </TestCaseEntity>

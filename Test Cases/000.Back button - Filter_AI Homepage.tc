@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>000.Back button - Filter_AI Homepage</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>410c2c20-6ad2-486b-b8c1-65cc61fa13f7</testCaseGuid>
+</TestCaseEntity>

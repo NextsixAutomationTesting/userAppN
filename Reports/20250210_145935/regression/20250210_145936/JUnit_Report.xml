@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="regression" time="91.252" tests="3" failures="0" errors="1">
+   <testsuite name="regression" tests="3" failures="0" errors="1" time="91.252" skipped="0" timestamp="10-02-2025T14:59:42" hostname="Nextsix - LAPTOP-ED4PU2U8" id="Test Suites/regression">
+      <properties>
+         <property name="deviceName" value="Xiaomi 2311DRK48G (Android 14)"/>
+         <property name="devicePlatform" value="Android"/>
+         <property name="logFolder" value="C:\\Users\\Nextsix\\git\\katalon-agentapp\\userAppN\\Reports\\20250210_145935\\regression\\20250210_145936"/>
+         <property name="logFiles" value="C:\\Users\\Nextsix\\git\\katalon-agentapp\\userAppN\\Reports\\20250210_145935\\regression\\20250210_145936\\appium.log, C:\\Users\\Nextsix\\git\\katalon-agentapp\\userAppN\\Reports\\20250210_145935\\regression\\20250210_145936\\appium_error.log, C:\\Users\\Nextsix\\git\\katalon-agentapp\\userAppN\\Reports\\20250210_145935\\regression\\20250210_145936\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Nextsix - LAPTOP-ED4PU2U8"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="appiumServerStatus" value="{&quot;value&quot;:{&quot;build&quot;:{&quot;version&quot;:&quot;1.22.3&quot;}},&quot;sessionId&quot;:null,&quot;status&quot;:0}"/>
+         <property name="katalonVersion" value="10.0.0.223"/>
+         <property name="deviceOS" value="Android"/>
+         <property name="appiumVersion" value="1.22.3"/>
+         <property name="deviceModel" value="2311DRK48G"/>
+         <property name="hostAddress" value="192.168.3.133"/>
+         <property name="deviceManufacturer" value="Xiaomi"/>
+         <property name="deviceId" value="6HTOEEBEPJ7DEIFA"/>
+         <property name="deviceName" value="Xiaomi 2311DRK48G (Android 14)"/>
+         <property name="deviceOSVersion" value="14"/>
+      </properties>
+      <testcase name="Test Cases/0000.hello" time="47.234" classname="Test Cases/0000.hello" status="PASSED">
+         <system-out><![CDATA[10-02-2025T14:59:42 - [TEST_CASE][PASSED] - Test Cases/0000.hello: Test Cases/0000.hello
+
+10-02-2025T14:59:42 - [TEST_STEP][PASSED] - startApplication("C:\Users\Nextsix\git\nav6.apk", true): Started application: 'C:\Users\Nextsix\git\nav6.apk'
+
+10-02-2025T14:59:43 - [MESSAGE][INFO] - Starting application: 'C:\Users\Nextsix\git\nav6.apk'
+
+10-02-2025T14:59:43 - [MESSAGE][INFO] - Detected NodeJS location: "C:\Program Files\nodejs\node.exe"
+
+10-02-2025T14:59:57 - [MESSAGE][INFO] - PATH: C:\Program Files\nodejs;
+
+10-02-2025T14:59:57 - [MESSAGE][INFO] - APPIUM_HOME: C:\Users\Nextsix\AppData\Roaming\npm\node_modules\appium\build\lib\main.js
+
+10-02-2025T14:59:57 - [MESSAGE][INFO] - appium outlog: C:\Users\Nextsix\git\katalon-agentapp\userAppN\Reports\20250210_145935\regression\20250210_145936\appium.log
+
+10-02-2025T14:59:57 - [MESSAGE][INFO] - appium errlog: C:\Users\Nextsix\git\katalon-agentapp\userAppN\Reports\20250210_145935\regression\20250210_145936\appium_error.log
+
+10-02-2025T14:59:58 - [MESSAGE][INFO] - Appium server started on port 59,014
+
+10-02-2025T15:00:17 - [MESSAGE][PASSED] - Started application: 'C:\Users\Nextsix\git\nav6.apk'
+
+10-02-2025T15:00:17 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/0000.hello/android.widget.TextView - Lets Get Started"), 0): Tapped on element 'Object Repository/0000.hello/android.widget.TextView - Lets Get Started'
+
+10-02-2025T15:00:17 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+10-02-2025T15:00:20 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/0000.hello/android.widget.TextView - Lets Get Started'
+
+10-02-2025T15:00:20 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/0000.hello/android.widget.ImageView"), 0): Tapped on element 'Object Repository/0000.hello/android.widget.ImageView'
+
+10-02-2025T15:00:20 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+10-02-2025T15:00:21 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/0000.hello/android.widget.ImageView'
+
+10-02-2025T15:00:21 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/0000.hello/android.widget.TextView - Search here"), 0): Tapped on element 'Object Repository/0000.hello/android.widget.TextView - Search here'
+
+10-02-2025T15:00:21 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+10-02-2025T15:00:22 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/0000.hello/android.widget.TextView - Search here'
+
+10-02-2025T15:00:22 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/0000.hello/android.widget.TextView - Check out our Specialists and Agents on map"), 0): Tapped on element 'Object Repository/0000.hello/android.widget.TextView - Check out our Specialists and Agents on map'
+
+10-02-2025T15:00:22 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+10-02-2025T15:00:23 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/0000.hello/android.widget.TextView - Check out our Specialists and Agents on map'
+
+10-02-2025T15:00:23 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/0000.hello/android.widget.TextView - Cyberjaya"), 0): Tapped on element 'Object Repository/0000.hello/android.widget.TextView - Cyberjaya'
+
+10-02-2025T15:00:23 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+10-02-2025T15:00:24 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/0000.hello/android.widget.TextView - Cyberjaya'
+
+10-02-2025T15:00:24 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/0000.hello/android.widget.TextView - Property"), 0): Tapped on element 'Object Repository/0000.hello/android.widget.TextView - Property'
+
+10-02-2025T15:00:24 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+10-02-2025T15:00:25 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/0000.hello/android.widget.TextView - Property'
+
+10-02-2025T15:00:25 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/0000.hello/android.widget.TextView - OK"), 0): Tapped on element 'Object Repository/0000.hello/android.widget.TextView - OK'
+
+10-02-2025T15:00:25 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+10-02-2025T15:00:26 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/0000.hello/android.widget.TextView - OK'
+
+10-02-2025T15:00:26 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/0000.hello/android.widget.ImageView (1)"), ""): Actual text and expected text of test object 'Object Repository/0000.hello/android.widget.ImageView (1)' are matched.
+
+10-02-2025T15:00:28 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/0000.hello/android.widget.ImageView (1)' are matched.
+
+10-02-2025T15:00:28 - [TEST_STEP][PASSED] - closeApplication(): Close app successfully
+
+10-02-2025T15:00:29 - [MESSAGE][PASSED] - Close app successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/000. Back button" time="0.217" classname="Test Cases/000. Back button" status="ERROR">
+         <error type="ERROR" message="Test Cases/000. Back button FAILED.&#xa;Reason:&#xa;org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:&#xa;file:/C:/Users/Nextsix/git/katalon-agentapp/userAppN/Scripts/000.%20Back%20button/Script1712212601064.groovy: 27: unable to resolve class io.appium.java_client.MobileElement&#xa; @ line 27, column 1.&#xa;   import io.appium.java_client.MobileElement as MobileElement&#xa;   ^&#xa;&#xa;1 error&#xa;&#xa;	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)&#xa;	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xa;	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)&#xa;	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:161)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:107)&#xa;	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:176)&#xa;	at TempTestSuite1739170776356.run(TempTestSuite1739170776356.groovy:35)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#xa;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#xa;"/>
+         <system-out><![CDATA[10-02-2025T15:00:29 - [TEST_CASE][ERROR] - Test Cases/000. Back button: Test Cases/000. Back button FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/C:/Users/Nextsix/git/katalon-agentapp/userAppN/Scripts/000.%20Back%20button/Script1712212601064.groovy: 27: unable to resolve class io.appium.java_client.MobileElement
+ @ line 27, column 1.
+   import io.appium.java_client.MobileElement as MobileElement
+   ^
+
+1 error
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:161)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:107)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:176)
+	at TempTestSuite1739170776356.run(TempTestSuite1739170776356.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-out>
+         <system-err><![CDATA[10-02-2025T15:00:29 - [TEST_CASE][ERROR] - Test Cases/000. Back button: Test Cases/000. Back button FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/C:/Users/Nextsix/git/katalon-agentapp/userAppN/Scripts/000.%20Back%20button/Script1712212601064.groovy: 27: unable to resolve class io.appium.java_client.MobileElement
+ @ line 27, column 1.
+   import io.appium.java_client.MobileElement as MobileElement
+   ^
+
+1 error
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:161)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:107)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:176)
+	at TempTestSuite1739170776356.run(TempTestSuite1739170776356.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/0000.hello" time="43.39" classname="Test Cases/0000.hello" status="PASSED">
+         <system-out><![CDATA[10-02-2025T15:00:30 - [TEST_CASE][PASSED] - Test Cases/0000.hello: Test Cases/0000.hello
+
+10-02-2025T15:00:30 - [TEST_STEP][PASSED] - startApplication("C:\Users\Nextsix\git\nav6.apk", true): Started application: 'C:\Users\Nextsix\git\nav6.apk'
+
+10-02-2025T15:00:30 - [MESSAGE][INFO] - Starting application: 'C:\Users\Nextsix\git\nav6.apk'
+
+10-02-2025T15:00:30 - [MESSAGE][INFO] - Detected NodeJS location: "C:\Program Files\nodejs\node.exe"
+
+10-02-2025T15:00:39 - [MESSAGE][INFO] - PATH: C:\Program Files\nodejs;
+
+10-02-2025T15:00:39 - [MESSAGE][INFO] - APPIUM_HOME: C:\Users\Nextsix\AppData\Roaming\npm\node_modules\appium\build\lib\main.js
+
+10-02-2025T15:00:39 - [MESSAGE][INFO] - appium outlog: C:\Users\Nextsix\git\katalon-agentapp\userAppN\Reports\20250210_145935\regression\20250210_145936\appium.log
+
+10-02-2025T15:00:39 - [MESSAGE][INFO] - appium errlog: C:\Users\Nextsix\git\katalon-agentapp\userAppN\Reports\20250210_145935\regression\20250210_145936\appium_error.log
+
+10-02-2025T15:00:40 - [MESSAGE][INFO] - Appium server started on port 59,259
+
+10-02-2025T15:00:58 - [MESSAGE][PASSED] - Started application: 'C:\Users\Nextsix\git\nav6.apk'
+
+10-02-2025T15:00:58 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/0000.hello/android.widget.TextView - Lets Get Started"), 0): Tapped on element 'Object Repository/0000.hello/android.widget.TextView - Lets Get Started'
+
+10-02-2025T15:00:58 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+10-02-2025T15:01:02 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/0000.hello/android.widget.TextView - Lets Get Started'
+
+10-02-2025T15:01:02 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/0000.hello/android.widget.ImageView"), 0): Tapped on element 'Object Repository/0000.hello/android.widget.ImageView'
+
+10-02-2025T15:01:02 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+10-02-2025T15:01:02 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/0000.hello/android.widget.ImageView'
+
+10-02-2025T15:01:02 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/0000.hello/android.widget.TextView - Search here"), 0): Tapped on element 'Object Repository/0000.hello/android.widget.TextView - Search here'
+
+10-02-2025T15:01:02 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+10-02-2025T15:01:07 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/0000.hello/android.widget.TextView - Search here'
+
+10-02-2025T15:01:07 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/0000.hello/android.widget.TextView - Check out our Specialists and Agents on map"), 0): Tapped on element 'Object Repository/0000.hello/android.widget.TextView - Check out our Specialists and Agents on map'
+
+10-02-2025T15:01:07 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+10-02-2025T15:01:07 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/0000.hello/android.widget.TextView - Check out our Specialists and Agents on map'
+
+10-02-2025T15:01:07 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/0000.hello/android.widget.TextView - Cyberjaya"), 0): Tapped on element 'Object Repository/0000.hello/android.widget.TextView - Cyberjaya'
+
+10-02-2025T15:01:08 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+10-02-2025T15:01:08 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/0000.hello/android.widget.TextView - Cyberjaya'
+
+10-02-2025T15:01:08 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/0000.hello/android.widget.TextView - Property"), 0): Tapped on element 'Object Repository/0000.hello/android.widget.TextView - Property'
+
+10-02-2025T15:01:08 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+10-02-2025T15:01:09 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/0000.hello/android.widget.TextView - Property'
+
+10-02-2025T15:01:09 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/0000.hello/android.widget.TextView - OK"), 0): Tapped on element 'Object Repository/0000.hello/android.widget.TextView - OK'
+
+10-02-2025T15:01:09 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+10-02-2025T15:01:10 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/0000.hello/android.widget.TextView - OK'
+
+10-02-2025T15:01:10 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/0000.hello/android.widget.ImageView (1)"), ""): Actual text and expected text of test object 'Object Repository/0000.hello/android.widget.ImageView (1)' are matched.
+
+10-02-2025T15:01:12 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/0000.hello/android.widget.ImageView (1)' are matched.
+
+10-02-2025T15:01:12 - [TEST_STEP][PASSED] - closeApplication(): Close app successfully
+
+10-02-2025T15:01:13 - [MESSAGE][PASSED] - Close app successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[10-02-2025T14:59:42 - [TEST_SUITE][ERROR] - regression: Test Cases/000. Back button FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/C:/Users/Nextsix/git/katalon-agentapp/userAppN/Scripts/000.%20Back%20button/Script1712212601064.groovy: 27: unable to resolve class io.appium.java_client.MobileElement
+ @ line 27, column 1.
+   import io.appium.java_client.MobileElement as MobileElement
+   ^
+
+1 error
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:161)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:107)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:176)
+	at TempTestSuite1739170776356.run(TempTestSuite1739170776356.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-out>
+      <system-err><![CDATA[10-02-2025T14:59:42 - [TEST_SUITE][ERROR] - regression: Test Cases/000. Back button FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/C:/Users/Nextsix/git/katalon-agentapp/userAppN/Scripts/000.%20Back%20button/Script1712212601064.groovy: 27: unable to resolve class io.appium.java_client.MobileElement
+ @ line 27, column 1.
+   import io.appium.java_client.MobileElement as MobileElement
+   ^
+
+1 error
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:161)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:107)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:176)
+	at TempTestSuite1739170776356.run(TempTestSuite1739170776356.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)]]></system-err>
+   </testsuite>
+</testsuites>

@@ -4,5 +4,6 @@
    <name>01. Login by email</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>4e05a354-1110-4767-8b54-81c33f693b6c</testCaseGuid>
 </TestCaseEntity>

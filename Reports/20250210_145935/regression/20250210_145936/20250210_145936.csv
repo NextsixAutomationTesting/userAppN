@@ -1,0 +1,28 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+regression,,,,10-02-2025 14:59:42,10-02-2025 15:01:13,1m - 31.252s,ERROR
+,,,,,,,
+Test Cases/0000.hello,,,,10-02-2025 14:59:42,10-02-2025 15:00:29,47.234s,PASSED
+"startApplication(""C:\Users\Nextsix\git\nav6.apk"", true)",,,,10-02-2025 14:59:42,10-02-2025 15:00:17,34.490s,PASSED
+"tap(findTestObject(""Object Repository/0000.hello/android.widget.TextView - Lets Get Started""), 0)",,,,10-02-2025 15:00:17,10-02-2025 15:00:20,3.207s,PASSED
+"tap(findTestObject(""Object Repository/0000.hello/android.widget.ImageView""), 0)",,,,10-02-2025 15:00:20,10-02-2025 15:00:21,0.761s,PASSED
+"tap(findTestObject(""Object Repository/0000.hello/android.widget.TextView - Search here""), 0)",,,,10-02-2025 15:00:21,10-02-2025 15:00:22,1.496s,PASSED
+"tap(findTestObject(""Object Repository/0000.hello/android.widget.TextView - Check out our Specialists and Agents on map""), 0)",,,,10-02-2025 15:00:22,10-02-2025 15:00:23,0.877s,PASSED
+"tap(findTestObject(""Object Repository/0000.hello/android.widget.TextView - Cyberjaya""), 0)",,,,10-02-2025 15:00:23,10-02-2025 15:00:24,0.847s,PASSED
+"tap(findTestObject(""Object Repository/0000.hello/android.widget.TextView - Property""), 0)",,,,10-02-2025 15:00:24,10-02-2025 15:00:25,0.700s,PASSED
+"tap(findTestObject(""Object Repository/0000.hello/android.widget.TextView - OK""), 0)",,,,10-02-2025 15:00:25,10-02-2025 15:00:26,0.691s,PASSED
+"verifyElementText(findTestObject(""Object Repository/0000.hello/android.widget.ImageView (1)""), """")",,,,10-02-2025 15:00:26,10-02-2025 15:00:28,2.104s,PASSED
+closeApplication(),,,,10-02-2025 15:00:28,10-02-2025 15:00:29,1.690s,PASSED
+,,,,,,,
+Test Cases/000. Back button,,,,10-02-2025 15:00:29,10-02-2025 15:00:30,0.217s,ERROR
+,,,,,,,
+Test Cases/0000.hello,,,,10-02-2025 15:00:30,10-02-2025 15:01:13,43.390s,PASSED
+"startApplication(""C:\Users\Nextsix\git\nav6.apk"", true)",,,,10-02-2025 15:00:30,10-02-2025 15:00:58,28.240s,PASSED
+"tap(findTestObject(""Object Repository/0000.hello/android.widget.TextView - Lets Get Started""), 0)",,,,10-02-2025 15:00:58,10-02-2025 15:01:02,3.716s,PASSED
+"tap(findTestObject(""Object Repository/0000.hello/android.widget.ImageView""), 0)",,,,10-02-2025 15:01:02,10-02-2025 15:01:02,0.755s,PASSED
+"tap(findTestObject(""Object Repository/0000.hello/android.widget.TextView - Search here""), 0)",,,,10-02-2025 15:01:02,10-02-2025 15:01:07,4.308s,PASSED
+"tap(findTestObject(""Object Repository/0000.hello/android.widget.TextView - Check out our Specialists and Agents on map""), 0)",,,,10-02-2025 15:01:07,10-02-2025 15:01:07,0.821s,PASSED
+"tap(findTestObject(""Object Repository/0000.hello/android.widget.TextView - Cyberjaya""), 0)",,,,10-02-2025 15:01:07,10-02-2025 15:01:08,0.839s,PASSED
+"tap(findTestObject(""Object Repository/0000.hello/android.widget.TextView - Property""), 0)",,,,10-02-2025 15:01:08,10-02-2025 15:01:09,0.742s,PASSED
+"tap(findTestObject(""Object Repository/0000.hello/android.widget.TextView - OK""), 0)",,,,10-02-2025 15:01:09,10-02-2025 15:01:10,0.804s,PASSED
+"verifyElementText(findTestObject(""Object Repository/0000.hello/android.widget.ImageView (1)""), """")",,,,10-02-2025 15:01:10,10-02-2025 15:01:12,1.646s,PASSED
+closeApplication(),,,,10-02-2025 15:01:12,10-02-2025 15:01:13,1.466s,PASSED

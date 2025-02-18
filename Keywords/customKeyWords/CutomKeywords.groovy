@@ -43,10 +43,9 @@ import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 import org.openqa.selenium.Point
 
 import org.openqa.selenium.Dimension
-import io.appium.java_client.TouchAction
+
 import io.appium.java_client.touch.offset.PointOption
 
-import io.appium.java_client.MobileElement
 
 
 import io.appium.java_client.touch.WaitOptions
@@ -57,7 +56,6 @@ import java.time.Duration
 public class CustomKeywords {
 	@Keyword
 	public static void swipeUpToObject(TestObject toObject, int duration) {
-		MobileElement element = MobileBuiltInKeywords.findMobileElement(toObject, 10)
 		Dimension size = MobileDriverFactory.getDriver().manage().window().getSize()
 		int startX = size.getWidth() / 2
 		int startY = size.getHeight() * 3 / 4
@@ -69,11 +67,5 @@ public class CustomKeywords {
 		int objectCenterX = location.getX() + (element1.getSize().getWidth() / 2)
 		int objectCenterY = location.getY() + (element1.getSize().getHeight() / 2)
 
-		TouchAction action = new TouchAction(MobileDriverFactory.getDriver())
-		action.press(PointOption.point(startX, startY))
-			  .waitAction(WaitOptions.waitOptions(Duration.ofMillis(duration)))
-			  .moveTo(PointOption.point(objectCenterX, objectCenterY))
-			  .release()
-			  .perform()
 	}
 }

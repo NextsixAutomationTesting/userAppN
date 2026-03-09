@@ -18,6 +18,7 @@ import java.time.Duration as Duration
 Mobile.startApplication('C:\\Users\\Nextsix\\git\\katalon-agentapp\\userTester240503FixCrash(0.13.7).apk', true)
 
 //test25/10/24
+//test 2026
 
 Mobile.tap(findTestObject('null'), 0)
 

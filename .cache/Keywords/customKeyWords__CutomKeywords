@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "6B3747DA39808E2E2EB16BB1645B0630",
+  "keywordFileContentHash": "DDF0774D2488C5BA6E3ABA7445B383FC",
   "keywordClasses": [
     {
       "name": "customKeyWords.CustomKeywords",
@@ -33,11 +33,10 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }
